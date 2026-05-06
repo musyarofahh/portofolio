@@ -1,21 +1,31 @@
-function showSection(id) {
-    document.querySelectorAll("section").forEach(sec => {
-        sec.classList.remove("active");
+// SECTION NAVIGATION
+const buttons = document.querySelectorAll("[data-target]");
+const sections = document.querySelectorAll(".section");
+
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        sections.forEach(sec => sec.classList.remove("active"));
+        document.getElementById(btn.dataset.target).classList.add("active");
     });
+});
 
-    document.getElementById(id).classList.add("active");
-}
+// BACK BUTTON
+document.querySelectorAll(".back").forEach(btn => {
+    btn.addEventListener("click", () => {
+        sections.forEach(sec => sec.classList.remove("active"));
+        document.getElementById("home").classList.add("active");
+    });
+});
 
-// toggle detail (bisa buka/tutup)
-function toggleDetail(id) {
-    const el = document.getElementById(id);
+// TOGGLE DETAIL (scoped per section)
+document.querySelectorAll(".toggle").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const parent = btn.closest(".section");
+        const id = btn.dataset.id;
 
-    if (el.style.display === "block") {
-        el.style.display = "none";
-    } else {
-        document.querySelectorAll(".detail").forEach(d => {
-            d.style.display = "none";
-        });
-        el.style.display = "block";
-    }
-}
+        parent.querySelectorAll(".detail").forEach(d => d.style.display = "none");
+
+        const target = parent.querySelector("#" + id);
+        target.style.display = "block";
+    });
+});
