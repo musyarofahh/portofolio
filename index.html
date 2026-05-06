@@ -4,21 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Musyarofah Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
+
+<!-- ICON -->
+<script src="https://kit.fontawesome.com/4a3b1f73a2.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
 <!-- HOME -->
 <section id="home" class="active">
     <div class="hero">
-        <img src="https://via.placeholder.com/150" class="profile">
         <h1>Musyarofah</h1>
         <p>Data Analyst | Mathematics Graduate</p>
 
         <div class="buttons">
             <button onclick="showSection('about')">About</button>
-            <button onclick="showSection('projects')">Projects</button>
+            <button onclick="showSection('education')">Education</button>
             <button onclick="showSection('experience')">Experience</button>
+            <button onclick="showSection('projects')">Projects</button>
             <button onclick="showSection('contact')">Contact</button>
         </div>
     </div>
@@ -26,58 +31,128 @@
 
 <!-- ABOUT -->
 <section id="about">
-    <button class="back" onclick="showSection('home')">← Back</button>
-    <h2>About Me</h2>
-    <p>
-        Data-driven Mathematics graduate passionate about transforming data into insights.
-    </p>
+<button class="back" onclick="showSection('home')">← Back</button>
 
-    <div class="skills-chart">
-        <div class="bar python">Python</div>
-        <div class="bar sql">SQL</div>
-        <div class="bar excel">Excel</div>
-    </div>
+<h2>Summary</h2>
+<p>
+Data-driven Mathematics graduate with experience in transforming raw data into actionable insights 
+using Python, Excel, SQL, and Power BI.
+</p>
+
+<h2>Tools</h2>
+<div class="tools">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg">
+    <img src="https://img.icons8.com/color/48/power-bi.png">
+</div>
+
+<h2>Analytical Skills</h2>
+<p>Data Cleaning, Visualization, Statistical Modeling, Optimization</p>
+
+<h2>Soft Skills</h2>
+<p>Leadership, Problem Solving, Communication, Adaptability</p>
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<button class="back" onclick="showSection('home')">← Back</button>
+
+<h2>Universitas Padjadjaran</h2>
+<ul>
+<li>Relevant Course: Data Science, Time Series, Optimization</li>
+<li>Thesis: Optimization TikTok Live (Simplex)</li>
+<li>Publication: Cholera Model</li>
+<li>Achievement: Top 15 Paper UGM</li>
+<li>Language: TOEFL 467</li>
+</ul>
+
+<h2>Courses</h2>
+<div class="buttons">
+    <a href="#" target="_blank"><button>Coursera</button></a>
+    <a href="#" target="_blank"><button>DQLab</button></a>
+    <a href="#" target="_blank"><button>RevoU</button></a>
+</div>
+
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
-    <button class="back" onclick="showSection('home')">← Back</button>
-    <h2>Experience</h2>
+<button class="back" onclick="showSection('home')">← Back</button>
 
-    <div class="card">
-        <h3>Data Analyst Intern</h3>
-        <p>Kemnaker</p>
-    </div>
+<h2>Internship Experience</h2>
+<div class="buttons">
+    <button onclick="showDetail('da')">Data Analyst</button>
+    <button onclick="showDetail('bd')">Business Dev</button>
+</div>
 
-    <div class="card">
-        <h3>Business Development</h3>
-        <p>PT OPTIMA</p>
-    </div>
+<div id="da" class="detail">
+    <p>ETL 18k data, TB analysis 51k, dashboard visualization</p>
+</div>
+
+<div id="bd" class="detail">
+    <p>Client database 1000+, market research</p>
+</div>
+
+<h2>Organization Experience</h2>
+<div class="buttons">
+    <button onclick="showDetail('bem')">BEM Data Analyst</button>
+</div>
+
+<div id="bem" class="detail">
+    <p>Survey 500+ data, statistical analysis, reporting</p>
+</div>
+
 </section>
 
-<!-- PROJECTS -->
+<!-- PROJECT -->
 <section id="projects">
-    <button class="back" onclick="showSection('home')">← Back</button>
-    <h2>Projects</h2>
+<button class="back" onclick="showSection('home')">← Back</button>
 
-    <div class="project-grid">
-        <div class="project">
-            <h3>TB Analysis</h3>
-        </div>
-        <div class="project">
-            <h3>Cholera Model</h3>
-        </div>
-        <div class="project">
-            <h3>DBSCAN</h3>
-        </div>
-    </div>
+<h2>Projects</h2>
+
+<div class="buttons">
+    <button onclick="showDetail('tb')">TB Analysis</button>
+    <button onclick="showDetail('cholera')">Cholera Model</button>
+</div>
+
+<div id="tb" class="detail">
+    <p>Logistic regression analysis on TB dataset</p>
+    <img src="https://via.placeholder.com/400">
+</div>
+
+<div id="cholera" class="detail">
+    <p>Optimal control epidemiology model</p>
+    <img src="https://via.placeholder.com/400">
+</div>
+
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-    <button class="back" onclick="showSection('home')">← Back</button>
-    <h2>Contact</h2>
-    <p>Email: musyarofahh93@gmail.com</p>
+<button class="back" onclick="showSection('home')">← Back</button>
+
+<h2>Let's Connect</h2>
+
+<div class="contact">
+    <a href="https://linkedin.com/in/musyarofah" target="_blank">
+        <i class="fab fa-linkedin"></i> musyarofah
+    </a>
+
+    <a href="https://github.com/" target="_blank">
+        <i class="fab fa-github"></i> github
+    </a>
+
+    <a href="mailto:musyarofahh93@gmail.com">
+        <i class="fas fa-envelope"></i> email
+    </a>
+
+    <a href="https://kaggle.com/musyarofah" target="_blank">
+        <i class="fab fa-kaggle"></i> kaggle
+    </a>
+</div>
+
 </section>
 
 <script src="script.js"></script>
