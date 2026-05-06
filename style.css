@@ -6,19 +6,24 @@ body {
     background: linear-gradient(135deg, #4facfe, #f093fb);
 }
 
-/* SECTION */
-section {
+/* SECTION SYSTEM */
+.section {
     display: none;
     min-height: 100vh;
     padding: 40px;
 }
 
-section.active {
+.section.active {
     display: block;
 }
 
-/* HERO */
-.hero {
+/* CONTAINER */
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.center {
     text-align: center;
     margin-top: 100px;
 }
@@ -28,19 +33,18 @@ section.active {
     margin-top: 20px;
 }
 
-button, .link-btn {
-    margin: 5px;
+button, .btn {
     padding: 10px 18px;
-    border: none;
+    margin: 5px;
     border-radius: 20px;
+    border: none;
     background: white;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    color: black;
 }
 
-button:hover, .link-btn:hover {
+button:hover, .btn:hover {
     background: #ffd369;
 }
 
@@ -48,12 +52,13 @@ button:hover, .link-btn:hover {
 .back {
     background: none;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 /* TOOLS */
 .tools img {
     width: 45px;
-    margin: 8px;
+    margin: 5px;
 }
 
 /* DETAIL */
@@ -61,14 +66,6 @@ button:hover, .link-btn:hover {
     display: none;
     background: white;
     padding: 15px;
-    margin-top: 10px;
-    border-radius: 10px;
-}
-
-/* PROJECT IMG */
-.project-img {
-    width: 100%;
-    max-width: 400px;
     margin-top: 10px;
     border-radius: 10px;
 }
