@@ -1,13 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #f093fb);
+}
+
+/* SECTION */
+section {
+    display: none;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+section.active {
+    display: block;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* BUTTON */
+.buttons {
+    margin-top: 20px;
+}
+
+button, .link-btn {
+    margin: 5px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+button:hover, .link-btn:hover {
+    background: #ffd369;
+}
+
+/* BACK */
+.back {
+    background: none;
+    margin-bottom: 20px;
+}
+
+/* TOOLS */
 .tools img {
-    width: 50px;
-    margin: 10px;
-    transition: 0.3s;
+    width: 45px;
+    margin: 8px;
 }
 
-.tools img:hover {
-    transform: scale(1.2);
-}
-
+/* DETAIL */
 .detail {
     display: none;
     background: white;
@@ -16,19 +65,27 @@
     border-radius: 10px;
 }
 
+/* PROJECT IMG */
+.project-img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* CONTACT */
 .contact {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
 .contact a {
     text-decoration: none;
     color: black;
-    font-size: 18px;
 }
 
 .contact i {
-    margin-right: 10px;
+    margin-right: 8px;
     color: #4facfe;
 }
