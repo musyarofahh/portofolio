@@ -1,136 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musyarofah Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Musyarofah Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav>
-    <h2>Musya.</h2>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+<!-- HOME -->
+<section id="home" class="active">
+    <div class="hero">
+        <img src="https://via.placeholder.com/150" class="profile">
+        <h1>Musyarofah</h1>
+        <p>Data Analyst | Mathematics Graduate</p>
 
-<!-- HERO -->
-<section class="hero">
-    <h1>Hi, I'm Musyarofah 👋</h1>
-    <p>Data Analyst | Mathematics Graduate | Data Enthusiast</p>
+        <div class="buttons">
+            <button onclick="showSection('about')">About</button>
+            <button onclick="showSection('projects')">Projects</button>
+            <button onclick="showSection('experience')">Experience</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </div>
+    </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
+    <button class="back" onclick="showSection('home')">← Back</button>
     <h2>About Me</h2>
     <p>
-        Data-driven Mathematics graduate with experience in transforming raw data into actionable insights 
-        using Python, Excel, SQL, and Power BI. Passionate about solving real-world problems with data.
+        Data-driven Mathematics graduate passionate about transforming data into insights.
     </p>
-</section>
 
-<!-- EDUCATION -->
-<section id="education">
-    <h2>Education</h2>
-    <div class="card">
-        <h3>Universitas Padjadjaran</h3>
-        <p>Mathematics (2021–2025) | GPA: 3.38</p>
-        <p>Relevant: Data Science, Time Series, Optimization</p>
+    <div class="skills-chart">
+        <div class="bar python">Python</div>
+        <div class="bar sql">SQL</div>
+        <div class="bar excel">Excel</div>
     </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
+    <button class="back" onclick="showSection('home')">← Back</button>
     <h2>Experience</h2>
 
     <div class="card">
         <h3>Data Analyst Intern</h3>
-        <p>Kementerian Ketenagakerjaan (2025–Present)</p>
-        <ul>
-            <li>Processed 18,000+ K3 dataset (ETL)</li>
-            <li>Analyzed 51,000+ TB records</li>
-            <li>Built dashboard visualization</li>
-        </ul>
+        <p>Kemnaker</p>
     </div>
 
     <div class="card">
-        <h3>Business Development Intern</h3>
-        <p>PT OPTIMA Karya Global Group</p>
-        <ul>
-            <li>Managed 1000+ client database</li>
-            <li>Market research & segmentation</li>
-        </ul>
+        <h3>Business Development</h3>
+        <p>PT OPTIMA</p>
     </div>
-
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
+    <button class="back" onclick="showSection('home')">← Back</button>
     <h2>Projects</h2>
 
-    <div class="card">
-        <h3>Tuberculosis Risk Analysis</h3>
-        <p>Logistic regression on 51k dataset to identify risk factors</p>
+    <div class="project-grid">
+        <div class="project">
+            <h3>TB Analysis</h3>
+        </div>
+        <div class="project">
+            <h3>Cholera Model</h3>
+        </div>
+        <div class="project">
+            <h3>DBSCAN</h3>
+        </div>
     </div>
-
-    <div class="card">
-        <h3>Cholera Optimal Control Model</h3>
-        <p>Mathematical modeling using optimal control (vaccination & quarantine)</p>
-    </div>
-
-    <div class="card">
-        <h3>DBSCAN Spatial Clustering</h3>
-        <p>Clustering districts using spatial analysis</p>
-    </div>
-
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-    <h2>Certifications</h2>
-
-    <div class="card">
-        <p>Data Analytics - Coursera</p>
-    </div>
-
-    <div class="card">
-        <p>Data Science - DQLab</p>
-    </div>
-
-    <div class="card">
-        <p>Mini Data Analytics - RevoU</p>
-    </div>
-
-</section>
-
-<!-- SKILLS -->
-<section>
-    <h2>Skills</h2>
-    <p><b>Technical:</b> Python, SQL, Excel, Power BI, R</p>
-    <p><b>Analytical:</b> Data Cleaning, Modeling, Visualization</p>
-    <p><b>Soft Skills:</b> Leadership, Problem Solving, Communication</p>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
+    <button class="back" onclick="showSection('home')">← Back</button>
     <h2>Contact</h2>
     <p>Email: musyarofahh93@gmail.com</p>
-    <p>
-        <a href="https://linkedin.com/in/musyarofah">LinkedIn</a> |
-        <a href="https://www.kaggle.com/musyarofah">Kaggle</a>
-    </p>
 </section>
-
-<footer>
-    <p>© 2026 Musyarofah</p>
-</footer>
 
 <script src="script.js"></script>
 </body>
