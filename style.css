@@ -1,21 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    line-height: 1.6;
 }
 
-header {
-  background: #007acc;
-  color: white;
-  padding: 20px;
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+    color: white;
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f4f4f4;
+}
+
+/* SECTION */
 section {
-  margin: 20px;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
+/* CARD */
+.card {
+    background: #fafafa;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
 footer {
-  background: #f0f0f0;
-  padding: 10px;
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
 }
