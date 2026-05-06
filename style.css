@@ -1,181 +1,34 @@
-/* IMPORT FONT */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.tools img {
+    width: 50px;
+    margin: 10px;
+    transition: 0.3s;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #4facfe, #f093fb);
-    color: #333;
-    overflow-x: hidden;
+.tools img:hover {
+    transform: scale(1.2);
 }
 
-/* SECTION SYSTEM */
-section {
+.detail {
     display: none;
-    min-height: 100vh;
-    padding: 40px;
-    animation: fade 0.4s ease-in-out;
-}
-
-section.active {
-    display: block;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    margin-top: 80px;
-}
-
-.profile {
-    border-radius: 50%;
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border: 4px solid white;
-}
-
-/* TEXT */
-h1 {
-    font-size: 36px;
-    margin-top: 15px;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-/* BUTTON */
-.buttons {
-    margin-top: 20px;
-}
-
-.buttons button {
-    margin: 8px;
-    padding: 12px 22px;
-    border: none;
-    border-radius: 30px;
     background: white;
-    cursor: pointer;
-    font-weight: 500;
-    transition: all 0.3s ease;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
-.buttons button:hover {
-    background: #ffd369;
-    transform: scale(1.05);
-}
-
-/* BACK BUTTON */
-.back {
-    background: none;
-    border: none;
-    font-size: 16px;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-
-/* CARD */
-.card {
-    background: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-/* PROJECT GRID */
-.project-grid {
+.contact {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.project {
-    background: white;
-    padding: 25px;
-    border-radius: 20px;
-    flex: 1 1 250px;
-    text-align: center;
-    transition: 0.3s;
+.contact a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
 }
 
-.project:hover {
-    background: #ffd369;
-    transform: scale(1.05);
-}
-
-/* SKILL CHART */
-.skills-chart {
-    margin-top: 30px;
-}
-
-.bar {
-    height: 30px;
-    margin: 10px 0;
-    color: white;
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    font-size: 14px;
-}
-
-/* FIXED WIDTH + ANIMATION VIA TRANSFORM */
-.python {
-    width: 90%;
-    background: #4facfe;
-    animation: growBar 1.5s ease;
-}
-
-.sql {
-    width: 80%;
-    background: #f093fb;
-    animation: growBar 1.5s ease;
-}
-
-.excel {
-    width: 85%;
-    background: #ffd369;
-    animation: growBar 1.5s ease;
-}
-
-/* ANIMATION */
-@keyframes fade {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* FIXED GROW ANIMATION */
-@keyframes growBar {
-    from {
-        transform: scaleX(0);
-        transform-origin: left;
-    }
-    to {
-        transform: scaleX(1);
-        transform-origin: left;
-    }
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .project-grid {
-        flex-direction: column;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
+.contact i {
+    margin-right: 10px;
+    color: #4facfe;
 }
