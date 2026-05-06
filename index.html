@@ -6,35 +6,34 @@
 <title>Musyarofah Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
-
-<!-- Font Awesome (lebih stabil pakai CDN CSS) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
 
 <!-- HOME -->
-<section id="home" class="active">
-    <div class="hero">
+<section id="home" class="section active">
+    <div class="container center">
         <h1>Musyarofah</h1>
         <p>Data Analyst | Mathematics Graduate</p>
 
         <div class="buttons">
-            <button onclick="showSection('about')">About</button>
-            <button onclick="showSection('education')">Education</button>
-            <button onclick="showSection('experience')">Experience</button>
-            <button onclick="showSection('projects')">Projects</button>
-            <button onclick="showSection('contact')">Contact</button>
+            <button data-target="about">About</button>
+            <button data-target="education">Education</button>
+            <button data-target="experience">Experience</button>
+            <button data-target="projects">Projects</button>
+            <button data-target="contact">Contact</button>
         </div>
     </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
-<button class="back" onclick="showSection('home')">← Back</button>
+<section id="about" class="section">
+<div class="container">
+<button class="back">← Back</button>
 
 <h2>Summary</h2>
-<p>Data-driven Mathematics graduate with strong analytical and data processing skills.</p>
+<p>Data-driven Mathematics graduate with strong analytical skills.</p>
 
 <h2>Tools</h2>
 <div class="tools">
@@ -44,21 +43,23 @@
 </div>
 
 <h2>Analytical Skills</h2>
-<p>Data Cleaning, Visualization, Statistical Modeling</p>
+<p>Data Cleaning, Visualization, Modeling</p>
 
 <h2>Soft Skills</h2>
 <p>Leadership, Communication, Problem Solving</p>
 
+</div>
 </section>
 
 <!-- EDUCATION -->
-<section id="education">
-<button class="back" onclick="showSection('home')">← Back</button>
+<section id="education" class="section">
+<div class="container">
+<button class="back">← Back</button>
 
 <h2>Universitas Padjadjaran</h2>
 <ul>
-<li>Relevant Course: Data Science, Time Series</li>
-<li>Thesis: Optimization TikTok Live</li>
+<li>Relevant Course: Data Science</li>
+<li>Thesis: Optimization</li>
 <li>Publication: Cholera Model</li>
 <li>Achievement: Top 15 UGM</li>
 <li>Language: TOEFL 467</li>
@@ -66,68 +67,67 @@
 
 <h2>Courses</h2>
 <div class="buttons">
-    <a href="#" target="_blank" class="link-btn">Coursera</a>
-    <a href="#" target="_blank" class="link-btn">DQLab</a>
-    <a href="#" target="_blank" class="link-btn">RevoU</a>
+    <a href="#" target="_blank" class="btn">Coursera</a>
+    <a href="#" target="_blank" class="btn">DQLab</a>
+    <a href="#" target="_blank" class="btn">RevoU</a>
 </div>
 
+</div>
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience">
-<button class="back" onclick="showSection('home')">← Back</button>
+<section id="experience" class="section">
+<div class="container">
+<button class="back">← Back</button>
 
 <h2>Internship</h2>
 <div class="buttons">
-    <button onclick="toggleDetail('da')">Data Analyst</button>
-    <button onclick="toggleDetail('bd')">Business Dev</button>
+    <button class="toggle" data-id="da">Data Analyst</button>
+    <button class="toggle" data-id="bd">Business Dev</button>
 </div>
 
-<div id="da" class="detail">
-    <p>ETL, data cleaning, dashboard, TB analysis</p>
-</div>
-
-<div id="bd" class="detail">
-    <p>Client database, research, marketing</p>
-</div>
+<div id="da" class="detail">ETL, TB analysis, dashboard</div>
+<div id="bd" class="detail">Client database, research</div>
 
 <h2>Organization</h2>
 <div class="buttons">
-    <button onclick="toggleDetail('bem')">BEM Data</button>
+    <button class="toggle" data-id="bem">BEM Data</button>
 </div>
 
-<div id="bem" class="detail">
-    <p>Survey data, statistical analysis, reporting</p>
-</div>
+<div id="bem" class="detail">Survey & analysis</div>
 
+</div>
 </section>
 
 <!-- PROJECT -->
-<section id="projects">
-<button class="back" onclick="showSection('home')">← Back</button>
+<section id="projects" class="section">
+<div class="container">
+<button class="back">← Back</button>
 
 <h2>Projects</h2>
 
 <div class="buttons">
-    <button onclick="toggleDetail('tb')">TB Analysis</button>
-    <button onclick="toggleDetail('cholera')">Cholera Model</button>
+    <button class="toggle" data-id="tb">TB Analysis</button>
+    <button class="toggle" data-id="cholera">Cholera Model</button>
 </div>
 
 <div id="tb" class="detail">
-    <p>Logistic regression TB dataset</p>
-    <img src="https://via.placeholder.com/400" class="project-img">
+    Logistic regression project
+    <img src="https://via.placeholder.com/400">
 </div>
 
 <div id="cholera" class="detail">
-    <p>Optimal control model</p>
-    <img src="https://via.placeholder.com/400" class="project-img">
+    Optimal control model
+    <img src="https://via.placeholder.com/400">
 </div>
 
+</div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
-<button class="back" onclick="showSection('home')">← Back</button>
+<section id="contact" class="section">
+<div class="container">
+<button class="back">← Back</button>
 
 <h2>Let's Connect</h2>
 
@@ -135,20 +135,18 @@
     <a href="https://linkedin.com/in/musyarofah" target="_blank">
         <i class="fab fa-linkedin"></i> musyarofah
     </a>
-
     <a href="https://github.com/" target="_blank">
         <i class="fab fa-github"></i> github
     </a>
-
     <a href="mailto:musyarofahh93@gmail.com">
         <i class="fas fa-envelope"></i> email
     </a>
-
     <a href="https://kaggle.com/musyarofah" target="_blank">
         <i class="fab fa-kaggle"></i> kaggle
     </a>
 </div>
 
+</div>
 </section>
 
 <script src="script.js"></script>
