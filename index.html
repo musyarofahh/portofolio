@@ -7,8 +7,8 @@
 
 <link rel="stylesheet" href="style.css">
 
-<!-- ICON -->
-<script src="https://kit.fontawesome.com/4a3b1f73a2.js" crossorigin="anonymous"></script>
+<!-- Font Awesome (lebih stabil pakai CDN CSS) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
@@ -34,24 +34,20 @@
 <button class="back" onclick="showSection('home')">← Back</button>
 
 <h2>Summary</h2>
-<p>
-Data-driven Mathematics graduate with experience in transforming raw data into actionable insights 
-using Python, Excel, SQL, and Power BI.
-</p>
+<p>Data-driven Mathematics graduate with strong analytical and data processing skills.</p>
 
 <h2>Tools</h2>
 <div class="tools">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg">
     <img src="https://img.icons8.com/color/48/power-bi.png">
 </div>
 
 <h2>Analytical Skills</h2>
-<p>Data Cleaning, Visualization, Statistical Modeling, Optimization</p>
+<p>Data Cleaning, Visualization, Statistical Modeling</p>
 
 <h2>Soft Skills</h2>
-<p>Leadership, Problem Solving, Communication, Adaptability</p>
+<p>Leadership, Communication, Problem Solving</p>
 
 </section>
 
@@ -61,18 +57,18 @@ using Python, Excel, SQL, and Power BI.
 
 <h2>Universitas Padjadjaran</h2>
 <ul>
-<li>Relevant Course: Data Science, Time Series, Optimization</li>
-<li>Thesis: Optimization TikTok Live (Simplex)</li>
+<li>Relevant Course: Data Science, Time Series</li>
+<li>Thesis: Optimization TikTok Live</li>
 <li>Publication: Cholera Model</li>
-<li>Achievement: Top 15 Paper UGM</li>
+<li>Achievement: Top 15 UGM</li>
 <li>Language: TOEFL 467</li>
 </ul>
 
 <h2>Courses</h2>
 <div class="buttons">
-    <a href="#" target="_blank"><button>Coursera</button></a>
-    <a href="#" target="_blank"><button>DQLab</button></a>
-    <a href="#" target="_blank"><button>RevoU</button></a>
+    <a href="#" target="_blank" class="link-btn">Coursera</a>
+    <a href="#" target="_blank" class="link-btn">DQLab</a>
+    <a href="#" target="_blank" class="link-btn">RevoU</a>
 </div>
 
 </section>
@@ -81,27 +77,27 @@ using Python, Excel, SQL, and Power BI.
 <section id="experience">
 <button class="back" onclick="showSection('home')">← Back</button>
 
-<h2>Internship Experience</h2>
+<h2>Internship</h2>
 <div class="buttons">
-    <button onclick="showDetail('da')">Data Analyst</button>
-    <button onclick="showDetail('bd')">Business Dev</button>
+    <button onclick="toggleDetail('da')">Data Analyst</button>
+    <button onclick="toggleDetail('bd')">Business Dev</button>
 </div>
 
 <div id="da" class="detail">
-    <p>ETL 18k data, TB analysis 51k, dashboard visualization</p>
+    <p>ETL, data cleaning, dashboard, TB analysis</p>
 </div>
 
 <div id="bd" class="detail">
-    <p>Client database 1000+, market research</p>
+    <p>Client database, research, marketing</p>
 </div>
 
-<h2>Organization Experience</h2>
+<h2>Organization</h2>
 <div class="buttons">
-    <button onclick="showDetail('bem')">BEM Data Analyst</button>
+    <button onclick="toggleDetail('bem')">BEM Data</button>
 </div>
 
 <div id="bem" class="detail">
-    <p>Survey 500+ data, statistical analysis, reporting</p>
+    <p>Survey data, statistical analysis, reporting</p>
 </div>
 
 </section>
@@ -113,18 +109,18 @@ using Python, Excel, SQL, and Power BI.
 <h2>Projects</h2>
 
 <div class="buttons">
-    <button onclick="showDetail('tb')">TB Analysis</button>
-    <button onclick="showDetail('cholera')">Cholera Model</button>
+    <button onclick="toggleDetail('tb')">TB Analysis</button>
+    <button onclick="toggleDetail('cholera')">Cholera Model</button>
 </div>
 
 <div id="tb" class="detail">
-    <p>Logistic regression analysis on TB dataset</p>
-    <img src="https://via.placeholder.com/400">
+    <p>Logistic regression TB dataset</p>
+    <img src="https://via.placeholder.com/400" class="project-img">
 </div>
 
 <div id="cholera" class="detail">
-    <p>Optimal control epidemiology model</p>
-    <img src="https://via.placeholder.com/400">
+    <p>Optimal control model</p>
+    <img src="https://via.placeholder.com/400" class="project-img">
 </div>
 
 </section>
